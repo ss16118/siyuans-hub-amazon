@@ -29,7 +29,7 @@ class PostSection extends Component {
     return (
       <Item
         as={Link}
-        to={`/blog/${this.state.id}`}
+        to={`/siyuans-hub/blog/${this.state.id}`}
         className="post-section"
         style={{ fontFamily: font }}
         onMouseEnter={(e) => {

@@ -20,13 +20,14 @@ import "./music-player.css";
 import MediaQuery from "react-responsive";
 
 class MusicPlayer extends Component {
+  defaultVolume = 0.6;
   constructor(props) {
     super(props);
     this.state = {
       currentSong: 0,
       isPlaying: false,
       progress: 0.0,
-      volume: 0.6,
+      volume: 0.0,
       activeIndex: 0,
       showPlayer: 0,
     };
@@ -81,8 +82,6 @@ class MusicPlayer extends Component {
     this.setState({ isPlaying: true });
   }
 
-  handleVolumeChange(value) {}
-
   componentDidMount() {
     const menu = document.getElementById("playlist");
     if (menu) {
@@ -101,6 +100,7 @@ class MusicPlayer extends Component {
         "px";
       volumeSlider.style.display = "none";
     }
+    this.setState({ volume: this.defaultVolume });
     this.refs.player.volume = this.state.volume;
     try {
       this.refs.player.muted = false;
@@ -230,7 +230,10 @@ class MusicPlayer extends Component {
               zIndex: "100",
             }}
             valueLabelDisplay="auto"
-            onChange={(e, val) => this.setState({ volume: val / 100 })}
+            onChange={(e, val) => {
+              console.log("Volume: " + this.state.volume);
+              this.setState({ volume: val / 100 });
+            }}
           />
           <Segment
             id="mobile-music-player"
@@ -242,7 +245,10 @@ class MusicPlayer extends Component {
           >
             <Grid>
               <Grid.Row centered style={{ padding: "1em 0 0 0" }}>
-                <Header as="h4" style={{ fontFamily: "JetBrains Mono" }}>
+                <Header
+                  as="h4"
+                  style={{ fontFamily: "JetBrains Mono", fontSize: "12px" }}
+                >
                   {playlist[this.state.currentSong].artist} -{" "}
                   {playlist[this.state.currentSong].title}
                 </Header>
@@ -585,9 +591,9 @@ class SongSelectionItem extends Component {
 let readableDuration = function (seconds) {
   let sec = Math.floor(seconds);
   let min = Math.floor(sec / 60);
-  min = min >= 10 ? min : "0" + min;
+  min = min >= 10 ? min : "0" + (isNaN(min) ? 0 : min);
   sec = Math.floor(sec % 60);
-  sec = sec >= 10 ? sec : "0" + sec;
+  sec = sec >= 10 ? sec : "0" + (isNaN(sec) ? 0 : sec);
   return min + ":" + sec;
 };
 

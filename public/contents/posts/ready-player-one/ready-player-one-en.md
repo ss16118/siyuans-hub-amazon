@@ -37,7 +37,7 @@ Cyberpunk has been one of my all-time favorite (if not my most favorite) sci-fi 
    That is rough I know. Well, the puzzles to the second and third Gate are definitely similar to those of the first, if not more difficult to solve, and there are countless pop culture references involved as well. Please forgive me for skipping the rest of the puzzles. If you are really interested, I suggest that you go on the [wikipedia page](<https://en.wikipedia.org/wiki/Joust_(video_game)>) of "Ready Player One" to find out more.
 
 <p align="center">
-  <img class="responsive" src="/contents/posts/ready-player-one/joust.jpeg" alt="Arcade game Joust" />
+  <img class="responsive" src="/siyuans-hub/contents/posts/ready-player-one/joust.jpeg" alt="Arcade game Joust" />
 </p>
 
 1. Our protagonist Wade is flat-ass broke in the beginning of the novel. His avatar has no items or levels, and he can't even afford the travel cost that gives him access to other planets. He is normally stranded at school, and only travels occasionally by hitchhiking with his friend Aech. The costumes and items of Parzival shown at the start of the movie are only obtained by Wade after beating the first Gate in the book.

@@ -27,13 +27,17 @@ class MobileApp extends Component {
             }}
           >
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/blog" exact component={Blog} />
-              <Route path="/projects" exact component={Projects} />
+              <Route path="/siyuans-hub/" exact component={Home} />
+              <Route path="/siyuans-hub/blog" exact component={Blog} />
+              <Route path="/siyuans-hub/projects" exact component={Projects} />
               {/* Posts */}
               {postData.map((post) => {
                 return (
-                  <Route key={post.title[lang]} exact path={`/blog/${post.id}`}>
+                  <Route
+                    key={post.title[lang]}
+                    exact
+                    path={`/siyuans-hub/blog/${post.id}`}
+                  >
                     <MarkdownSection filePath={post.path[lang]} lang={lang} />
                   </Route>
                 );

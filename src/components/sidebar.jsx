@@ -9,7 +9,7 @@ import labels from "../data/labels";
 class NavigationMenu extends Component {
   constructor(props) {
     super(props);
-    let itemName = window.location.pathname.substr(1);
+    let itemName = window.location.pathname.substr(13);
     itemName =
       itemName === ""
         ? "Home"
@@ -21,9 +21,9 @@ class NavigationMenu extends Component {
 
   render() {
     const url = {
-      Home: "/",
-      Blog: "/blog",
-      Projects: "/projects",
+      Home: "/siyuans-hub/",
+      Blog: "/siyuans-hub/blog",
+      Projects: "/siyuans-hub/projects",
     };
     const { activeItem } = this.state;
     const lang = this.context.lang.get;
@@ -31,7 +31,7 @@ class NavigationMenu extends Component {
     const font = lang === "en" ? "JetBrains Mono" : "Noto Sans";
     return (
       <React.Fragment>
-        <Link to="/">
+        <Link to="/siyuans-hub/">
           <div
             style={{
               marginTop: "2em",
@@ -43,7 +43,7 @@ class NavigationMenu extends Component {
             }}
           >
             <Image
-              src="/favicon/favicon-32x32.png"
+              src="/siyuans-hub/favicon/favicon-32x32.png"
               verticalAlign="middle"
               style={{ marginRight: "0.5em" }}
             />

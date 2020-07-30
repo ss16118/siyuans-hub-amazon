@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    let itemName = window.location.pathname.substr(1);
+    let itemName = window.location.pathname.substr(13);
     itemName =
       itemName === ""
         ? "Home"
@@ -25,9 +25,9 @@ class Navbar extends Component {
 
   render() {
     const url = {
-      Home: "/",
-      Blog: "/blog",
-      Projects: "/projects",
+      Home: "/siyuans-hub/",
+      Blog: "/siyuans-hub/blog",
+      Projects: "/siyuans-hub/projects",
     };
     const langMenu = {
       en: "Language",
@@ -55,9 +55,9 @@ class Navbar extends Component {
           position="top"
           style={{ fontFamily: font, fontSize: "11px" }}
         >
-          <Menu.Item as={Link} to="/" style={{ padding: "0.5em" }}>
+          <Menu.Item as={Link} to="/siyuans-hub/" style={{ padding: "0.5em" }}>
             <Image
-              src="/favicon/favicon-16x16.png"
+              src="/siyuans-hub/favicon/favicon-16x16.png"
               style={{ width: "20px", height: "20px" }}
             />
           </Menu.Item>
