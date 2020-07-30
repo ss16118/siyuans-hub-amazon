@@ -10,7 +10,7 @@
 - 微信：
 
 <p align="center">
-  <img src="../siyuans-hub/contents/wechat.jpg" alt="Wechat QR Code" style="width:100px;height:100px;"/>
+  <img src="../contents/wechat.jpg" alt="Wechat QR Code" style="width:100px;height:100px;"/>
 </p>
 
 > P.S. 网页里头所有的内容都是中英双语的，本人对翻译并不是很在行，翻译得不好还请多多谅解。这是我第一次用 React，所以做得比较简陋，估计还会有 Bug，也请大家多多包涵。

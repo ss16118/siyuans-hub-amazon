@@ -2,7 +2,7 @@
   "name": "ss-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ss16118.github.io/siyuans-hub/",
+  "homepage": "https://ss16118.github.io/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.56",

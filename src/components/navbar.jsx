@@ -25,9 +25,9 @@ class Navbar extends Component {
 
   render() {
     const url = {
-      Home: "/siyuans-hub/",
-      Blog: "/siyuans-hub/blog",
-      Projects: "/siyuans-hub/projects",
+      Home: "/",
+      Blog: "/blog",
+      Projects: "/projects",
     };
     const langMenu = {
       en: "Language",
@@ -55,9 +55,9 @@ class Navbar extends Component {
           position="top"
           style={{ fontFamily: font, fontSize: "11px" }}
         >
-          <Menu.Item as={Link} to="/siyuans-hub/" style={{ padding: "0.5em" }}>
+          <Menu.Item as={Link} to="/" style={{ padding: "0.5em" }}>
             <Image
-              src="/siyuans-hub/favicon/favicon-16x16.png"
+              src="/favicon/favicon-16x16.png"
               style={{ width: "20px", height: "20px" }}
             />
           </Menu.Item>

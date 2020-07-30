@@ -37,7 +37,7 @@
    类似的，第二和第三把钥匙的获得以及门的开启都有那么复杂，中间涉及到的 Pop Culture 元素更是数不胜数，在这儿就不一一介绍了，如果想了解不妨去[维基百科](https://en.wikipedia.org/wiki/Ready_Player_One)上看一眼。
 
 <p align="center">
-  <img class="responsive" src="/siyuans-hub/contents/posts/ready-player-one/joust.jpeg" alt="街机游戏鸵鸟骑士" />
+  <img class="responsive" src="/contents/posts/ready-player-one/joust.jpeg" alt="街机游戏鸵鸟骑士" />
 </p>
 
 2. 原著中的男主一开始在 OASIS 里基本上是个穷光蛋，别说什么等级和装备，甚至连传送去不同星球的车马费都没有，平时只能被困在学校，想去练级做任务还得蹭好基友 Aech 的飞船。电影开头 Parzival 的穿着打扮和装备是小说中后期男主打通了第一扇门之后才有的。

@@ -21,9 +21,9 @@ class NavigationMenu extends Component {
 
   render() {
     const url = {
-      Home: "/siyuans-hub/",
-      Blog: "/siyuans-hub/blog",
-      Projects: "/siyuans-hub/projects",
+      Home: "/",
+      Blog: "/blog",
+      Projects: "/projects",
     };
     const { activeItem } = this.state;
     const lang = this.context.lang.get;
@@ -31,7 +31,7 @@ class NavigationMenu extends Component {
     const font = lang === "en" ? "JetBrains Mono" : "Noto Sans";
     return (
       <React.Fragment>
-        <Link to="/siyuans-hub/">
+        <Link to="/">
           <div
             style={{
               marginTop: "2em",
@@ -43,7 +43,7 @@ class NavigationMenu extends Component {
             }}
           >
             <Image
-              src="/siyuans-hub/favicon/favicon-32x32.png"
+              src="/favicon/favicon-32x32.png"
               verticalAlign="middle"
               style={{ marginRight: "0.5em" }}
             />
